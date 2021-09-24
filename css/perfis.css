@@ -13,8 +13,10 @@
   
 
   body {
-    height: 100vh;
+    min-height: 100vh;
     position:relative;
+    display:flex;
+    flex-direction: column;
 
   }
   
@@ -262,30 +264,31 @@ h1::after{
 #modal {
     display: none;
     position: absolute;
-    background-color:#060707;
+    background-color:rgba(6, 7, 7, 0.9) ;
     width: 100%;
-    height: 768px;
+    height: 100%;
     z-index: 2;
     top:0;
+    justify-content: center;
+    align-items: center;
   }
 
 .modal-content{
     position:absolute;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    
+    flex-direction: row;
+    gap:0 124px;
+   
 }
+
 
 .modal-description{
     width:492px;
     height:407px;
+
     
-    
- 
-   
-    
+
+        
 }
 
 .modal-description h3{
@@ -294,6 +297,7 @@ h1::after{
     font-style:normal;
     font-family: Roboto,sans-serif;
     color:#FFFFFF;
+    margin-bottom: 72px;
 
 }
 
@@ -303,17 +307,42 @@ h1::after{
     color:#FFFFFF;
     font-weight:400;
     font-style:normal;
+    margin-bottom:53px;
+     margin-top: 2px;
+  
 }
 
-.modal-tasks a{
-   
+.modal-description a{
+     
     color:#FF0000;
-    font-weight:400;
-    font-size:28px;
-
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size:18px;
 }
 
+.modal-tasks h3{
+   
+    color:#FFFFFF;
+    font-weight:400;
+    font-size:32px;
+    font-style: normal;
+    font-family: Roboto,sans-serif;
+    margin-bottom:20px;
+}
 
+.task-imgs{
+    display:grid;
+    grid-template-areas: "box1 box2" 
+                         "box3 box4";
+ }
+ 
+ .task-imgs img{
+     width: 120px;
+     height: 120px;
+     border-radius:10px;
+     margin-top:54px;
+ }
 
 
 
@@ -473,7 +502,6 @@ h1::after{
  .dash-panel-notes{
     width: 100%;
     height: 100%;
-   
     display: grid;
     grid-template-areas: "box1" 
                          "box2"
