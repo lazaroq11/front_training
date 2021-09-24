@@ -229,6 +229,7 @@ h1::after{
    font-size:24px;
    font-weight:700;
    font-style:normal;
+   text-decoration: underline;
  
 }
 .imgPart {
@@ -285,10 +286,7 @@ h1::after{
 .modal-description{
     width:492px;
     height:407px;
-
-    
-
-        
+    margin-bottom:86px;        
 }
 
 .modal-description h3{
@@ -298,7 +296,7 @@ h1::after{
     font-family: Roboto,sans-serif;
     color:#FFFFFF;
     margin-bottom: 72px;
-
+  
 }
 
 .modal-description p{
@@ -307,9 +305,7 @@ h1::after{
     color:#FFFFFF;
     font-weight:400;
     font-style:normal;
-    margin-bottom:53px;
-     margin-top: 2px;
-  
+    margin-bottom:23px; 
 }
 
 .modal-description a{
@@ -319,6 +315,7 @@ h1::after{
     font-weight: 400;
     font-style:normal;
     font-size:18px;
+    
 }
 
 .modal-tasks h3{
@@ -351,6 +348,7 @@ h1::after{
 main{
 flex-direction:column;
 position:relative;
+
 }
 
 h1{
@@ -467,57 +465,195 @@ h1::after{
     background-color: #3B84AE;
     margin-left: 8px;
 }
-.dash-panel{
+
+.dash-perfis{
     width:100%;
     height:100%;
-    background: #ECEFF5;
-    margin-top: 10px;
-    
+   padding-right:20px;
+   padding-left:20px;
+    background:#DBDBDB;
 }
 
-.dash-panel-welcome {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #00A75A;
-    margin-top:30px;
-    width:100%;
-    height:41px;
-}
 
-.dash-panel-welcome p{
-    color:#FFFFFF;
+.dash-perfis h2{
+    font-weight: normal;
     font-style:normal;
-    font-size:22px;
-    margin-left:1px;
+    font-size: 24px;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
 }
 
-.dash-panel-title{
+.blocoPerfil{
+    width:100%;
+    height:100%;
+    background-color:#666666;
+    padding: 36px;
+    margin-top:36px;
+    border-radius:5px;
+    gap: 19px;
     display:flex;
-    flex-direction: column-reverse;
-    justify-content:center;
-    align-items: center;
+    flex-direction: column;
  }
 
- .dash-panel-notes{
+ 
+ .description{
+    font-size:18px;
+    font-style: normal;
+ }
+
+ .textPart{
+    color:#FFFFFF;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;   
+ }
+
+ .textPart a{
+    color:#FFFFFF;
+    font-size:24px;
+    text-decoration: underline;
+    margin-left:4px;
+   
+ }
+
+
+ .textPart .nick{
+    font-size:20px;
+    margin-top:20px;
+ }
+ 
+ .textPart .nickName{
+    font-size:20px;
+    font-weight:700;
+    font-style:normal;
+    text-decoration: underline;
+  
+ }
+
+
+ .imgPart {
+    height:100%;
+ }
+ 
+ .imgPart img{
+    height:100%;
+    border-radius: 19px;
+    width:100%;
+ }
+ 
+
+
+
+ .arrowsNav{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content: space-between;
+    margin-top: 57px;
+  
+  }
+
+  .arrows{
+    padding: 10px;
+    background-color:#FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #modal {
+    display: none;
+    position: absolute;
+    background-color:rgba(6, 7, 7, 0.9) ;
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-areas: "box1" 
-                         "box2"
-                         "box3"
-                         "box4"
-                         "box5" 
-                         "box6";
+    z-index: 2;
+    top:0;
+    justify-content: center;
+    align-items: center;
+  }
+
+.modal-content{
+    position:absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    gap:0 124px;
+   
+   
 }
 
-.dash-panel-notes1{
-   
+
+.modal-description{
     width:100%;
-    height:100;
-    margin-left:1px;
-    
+    height:100%;
+    padding-top:40px;     
 }
+
+.modal-description h3{
+    font-size:20px;
+    font-weight:400;
+    font-style:normal;
+    font-family: Roboto,sans-serif;
+    color:#FFFFFF;
+    margin-bottom: 52px;
+    padding-left:10px;
+  
+}
+
+.modal-description p{
+    font-size:15px;
+    font-style:Roboto,sans-serif;
+    color:#FFFFFF;
+    font-weight:400;
+    font-style:normal;
+    margin-bottom:23px; 
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.modal-description a{
+     
+    color:#FF0000;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size:20px;
+    padding-left:10px;
+}
+
+.modal-tasks h3{
+   
+    color:#FFFFFF;
+    font-weight:400;
+    font-size:20px;
+    font-style: normal;
+    font-family: Roboto,sans-serif;
+    margin-bottom:20px;
+    padding-left:10px;
+}
+
+.task-imgs{
+    display:grid;
+    grid-template-areas: "box1 box2" 
+                         "box3 box4";
+    margin-left:10px;
+  
+ }
+ 
+ .task-imgs img{
+     width: 75%;
+     height: 100%;
+     border-radius:10px;
+     margin-top:2px;
+     margin-left:20px;
+     padding-top:20px;
+ }
+
+
+
 
 }
 
@@ -636,7 +772,7 @@ h1::after{
 }
 
 
-.userName{
+    .userName{
     display: flex;
     margin-top:10px;
     flex-direction: row;
@@ -644,7 +780,7 @@ h1::after{
     justify-content: left;
 }
 
-.userName img{
+    .userName img{
     width: 60px;
     height:60px;
     border-radius: 100%;
@@ -652,7 +788,183 @@ h1::after{
     
 }
 
+    .dash-perfis{
+     width:100%;
+     height:100%;
+     padding-right:20px;
+     padding-left:20px;
+     background:#DBDBDB;
+}
 
+
+    .dash-perfis h2{
+     font-weight: normal;
+     font-style:normal;
+     font-size: 24px;
+     font-family:'Roboto', sans-serif;
+     text-align: center;
+}
+
+    .blocoPerfil{
+     width:100%;
+     height:100%;
+     background-color:#666666;
+     padding: 36px;
+     margin-top:36px;
+     border-radius:5px;
+     gap: 19px;
+     display:flex;
+     flex-direction: column;
+ }
+
+ 
+     .description{
+     font-size:18px;
+     font-style: normal;
+ }
+
+    .textPart{
+     color:#FFFFFF;
+     width:100%;
+     height:100%;
+     display:flex;
+     flex-direction: column;
+     font-size:24px;   
+ }
+
+    .textPart a{
+     color:#FFFFFF;
+     font-size:30px;
+     text-decoration: underline;
+     margin-left:4px;
+
+ }
+
+
+    .textPart .nick{
+     font-size:30px;
+     margin-top:20px;
+ }
+ 
+    .textPart .nickName{
+     font-size:30px;
+     font-weight:700;
+     font-style:normal;
+     text-decoration: underline;
+ }
+
+
+ 
+    .imgPart img{
+     height:100%;
+     border-radius: 19px;
+     width:100%;
+ }
+ 
+
+
+
+    .arrowsNav{
+     display:flex;
+     flex-direction:row;
+     width:100%;
+     justify-content: space-between;
+     margin-top: 57px;
+}
+
+   .arrows{
+    padding: 10px;
+    background-color:#FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+   #modal {
+    display: none;
+    position: absolute;
+    background-color:rgba(6, 7, 7, 0.9) ;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top:0;
+    justify-content: center;
+    align-items: center;
+}
+
+  .modal-content{
+    position:absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    gap:0 124px;
+}
+
+
+    .modal-description{
+     width:100%;
+     height:100%;
+     padding-top:40px;     
+}
+
+    .modal-description h3{
+     font-size:20px;
+     font-weight:400;
+     font-style:normal;
+     font-family: Roboto,sans-serif;
+     color:#FFFFFF;
+     margin-bottom: 52px;
+     padding-left:10px;
+}
+
+    .modal-description p{
+     font-size:15px;
+     font-style:Roboto,sans-serif;
+     color:#FFFFFF;
+     font-weight:400;
+     font-style:normal;
+     margin-bottom:23px; 
+     padding-left:10px;
+     padding-right:10px;
+} 
+
+    .modal-description a{ 
+    color:#FF0000;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size:20px;
+    padding-left:10px;
+}
+
+    .modal-tasks h3{
+    color:#FFFFFF;
+    font-weight:400;
+    font-size:20px;
+    font-style: normal;
+    font-family: Roboto,sans-serif;
+    margin-bottom:20px;
+    padding-left:10px;
+}
+
+    .task-imgs{
+    display:grid;
+    grid-template-areas: "box1 box2" 
+                         "box3 box4";
+    margin-left:10px;
+  
+}
+ 
+   .task-imgs img{
+     width: 75%;
+     height: 100%;
+     border-radius:10px;
+     margin-top:2px;
+     margin-left:20px;
+     padding-top:20px;
+}
 
 }
 
