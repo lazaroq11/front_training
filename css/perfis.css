@@ -239,6 +239,7 @@ h1::after{
 .imgPart img{
    height:100%;
    border-radius: 19px;
+   width:100%;
 }
 
 .arrowsNav{
@@ -258,6 +259,7 @@ h1::after{
    display: flex;
    align-items: center;
    justify-content: center;
+   cursor:pointer;
 }
 
 
@@ -286,7 +288,7 @@ h1::after{
 .modal-description{
     width:492px;
     height:407px;
-    margin-bottom:86px;        
+        
 }
 
 .modal-description h3{
@@ -301,11 +303,13 @@ h1::after{
 
 .modal-description p{
     font-size:22px;
-    font-style:Roboto,sans-serif;
+    font-family:Roboto,sans-serif;
     color:#FFFFFF;
     font-weight:400;
     font-style:normal;
-    margin-bottom:23px; 
+    margin-bottom:23px;
+
+    
 }
 
 .modal-description a{

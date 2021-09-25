@@ -27,7 +27,7 @@ const amiguitos = [
               "./img/vitor/activity.png",
               "./img/vitor/activity1.png",
               "./img/vitor/activity2.png",
-              "./img/vitor/activity3.png",
+              "./img/vitor/activity4.png",
             ],
           },
       
@@ -51,7 +51,8 @@ let btNext = document.querySelector(".arrowNext")
 let btBack = document.querySelector(".arrowBack")
 let nomeModal = document.querySelector(".nomeModal")
 let descrModal = document.querySelector(".paragModal")
-let btModal = document.querySelector(".linkModal")
+let btModal = document.querySelector(".nickName")
+let taskImg = document.querySelectorAll(".taskImg")
 let contadorAmiguitos = 0;
 
 btNext.addEventListener("click",()=>{
@@ -82,13 +83,16 @@ btBack.addEventListener("click",()=>{
 
 btModal.addEventListener("click", ()=>{
    
-   alert(contadorAmiguitos)
    nomeModal.textContent = amiguitos[contadorAmiguitos].nome
    descrModal.textContent = amiguitos[contadorAmiguitos].descricaoModal
 
+   amiguitos[contadorAmiguitos].atividadesFavoritas.forEach((atividadesFavorita,index)=>{
+    
+      taskImg[index].src = atividadesFavorita
+      
+   })
 
-
-  
+   
 })
 
 function showSideMenu(){
