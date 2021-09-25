@@ -121,11 +121,8 @@
       <h2>Perfis dos responsáveis</h2>
       <div class="blocoPerfil">
           <div class="textPart">
-              <p cl ass="description">
-                  Bruno Pitta, desenvolvedor Front End Pleno, atualmente trabalhando na VX Case,
-                  além de trabalhar como monitor no curso da cubos academy em parceria com o ifood.
-                  Atualmente estudando Next. Não menos importante, mas ama bastante dark souls e é jogador de mago em qualquer
-                  RPG.
+              <p class="description">
+                 
               </p>
               <p class="nick">
                   Nick:<ahref="javascript:void(0)" onclick="abrirModal()" class="nickName">Bad Luck For You</a>
@@ -133,7 +130,7 @@
           </div>
 
           <div class="imgPart">
-              <img src="img/Rectangle 19.png" alt="Foto do perfil">
+              <img class="imgUser" src="img/Rectangle 19.png" alt="Foto do perfil">
           </div>
       </div>
 
@@ -141,14 +138,14 @@
 
       <div class="arrowsNav">
           <div class="arrows">
-            <svg width="40" height="40" viewBox="0 0 40 40" transform="rotate(180)"fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="arrowBack" width="40" height="40" viewBox="0 0 40 40" transform="rotate(180)"fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="40" height="40" rx="20" fill="white"/>
               <path d="M16.6668 10L14.3168 12.35L21.9501 20L14.3168 27.65L16.6668 30L26.6668 20L16.6668 10Z" fill="black"/>
               </svg>
               
           </div>
           <div class="arrows">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="arrowNext" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="40" height="40" rx="20" fill="white"/>
               <path d="M16.6668 10L14.3168 12.35L21.9501 20L14.3168 27.65L16.6668 30L26.6668 20L16.6668 10Z" fill="black"/>
               </svg>
@@ -163,16 +160,10 @@
   <div class="modal-container" id="modal">
     <div class="modal-content">
        <div class="modal-description">
-       <h3>Bruno Pitta</h3>
-       <p>Desenvolvedor Front End Pleno, atualmente trabalhando na VX Case, além de trabalhar como monitor no curso
-         da cubos academy em parceria com o ifood. Atualmente estudando Next. Não menos importante, mas ama bastante
-         dark souls e é jogador de mago em qualquer RPG.</p>
-        <p>Estou habituado com html, css e javascript, além de ter experiência em projetos com angular, vue e React, apesar de ter clara preferência pelo último, devido a isso
-        que decidi escolher o next.</p> 
-        <p>Possuo pouco mais de 2 anos de experiência e não estou aberto a novas propostas de
-        trabalho no momento.</p>
+       <h3 class="nomeModal"></h3>
+       <p class="paragModal"></p>
   
-        <a href="javascript:void(0)" onclick="fecharModal()">Sair</a>
+        <a class="linkModal" href="javascript:void(0)" onclick="fecharModal()">Sair</a>
       </div>
 
        <div class="modal-tasks">
@@ -180,7 +171,7 @@
    
 
       <div class="task-imgs">
-        <img src="img/pokemon.png" alt="pokemon">
+        <img  src="img/pokemon.png" alt="pokemon">
         <img src="img/yugioh.jpg" alt="yugioh">
         <img src="img/league-of-legends.jpg" alt="lol">
         <img src="img/darksouls.jpg" alt="darksouls">   
